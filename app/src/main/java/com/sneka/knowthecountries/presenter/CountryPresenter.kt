@@ -39,6 +39,7 @@ public class CountryPresenter
             })
     }
 }
+
 interface ApiClient {
     @GET("rest/v2/all")
     fun getAllCountries(): Observable<ArrayList<country>>

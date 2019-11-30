@@ -7,14 +7,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import android.graphics.Rect;
-import android.widget.Toast
 import com.sneka.knowthecountries.R
 import com.sneka.knowthecountries.adapter.countryListAdapter
 import com.sneka.knowthecountries.model.country
-import com.sneka.knowthecountries.presenter.ApiClient
 import com.sneka.knowthecountries.utils.AppConstants
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 import org.jetbrains.anko.alert
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
