@@ -19,6 +19,14 @@ import android.view.Menu
 import android.widget.SearchView
 import androidx.appcompat.widget.Toolbar;
 import com.sneka.knowthecountries.presenter.CountryPresenter
+import androidx.recyclerview.widget.DividerItemDecoration
+import android.graphics.drawable.ClipDrawable.HORIZONTAL
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
+
 
 /*
 Author name: Sneka Shanmughasundaram
@@ -105,8 +113,10 @@ class MainActivity : AppCompatActivity(),CountryView {
     fun prepareRecyclerView() {
         recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView!!.layoutManager = LinearLayoutManager(this)
-        recyclerView!!.addItemDecoration(MarginItemDecoration(
-            resources.getDimension(R.dimen.default_padding).toInt()))
+        val itemDecor = DividerItemDecoration(this, HORIZONTAL)
+       // recyclerView!!.addItemDecoration(MarginItemDecoration(
+         //   resources.getDimension(R.dimen.default_padding).toInt()))
+        recyclerView!!.addItemDecoration(itemDecor)
     }
 
     fun prepareAdapter(countryList: ArrayList<country>) {
