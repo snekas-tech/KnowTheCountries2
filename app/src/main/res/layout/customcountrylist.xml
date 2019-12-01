@@ -15,8 +15,8 @@
         android:gravity="center" >
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:padding="@dimen/margin_4dp"
             android:layout_marginLeft="@dimen/margin_8dp"
             android:scaleType="centerCrop"
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:text="countryName"
                 android:textStyle="bold"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/amaranth"
                 android:layout_marginLeft="15dp"
                 android:layout_marginStart="15dp"
@@ -49,7 +49,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/ramaraja"
                 android:text="capitalName"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
