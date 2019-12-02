@@ -38,8 +38,8 @@
 
     <style name="HeaderTextView" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">25dp</item>
-        <item name="android:background">@color/lightBlue</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:background">@color/green</item>
         <item name="android:typeface">serif</item>
     </style>
 
